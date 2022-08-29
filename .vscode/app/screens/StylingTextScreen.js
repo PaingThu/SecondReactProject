@@ -6,7 +6,17 @@ function StylingTextScreen(props) {
         <View
             style={styles.container}
         >
-            <Text> I Love React Native! </Text>
+            <Text style = {{
+                // fontFamily: 'Courier',
+                fontSize: 30,
+                fontStyle: 'italic',
+                fontWeight: 'bold',
+                color: 'tomato',
+                textTransform: 'capitalize',
+                textAlign: 'center',
+                lineHeight: 30,
+
+            }}> I love react native! This is my first react native app! Here is some more text.</Text>
         </View>
     );
 }
