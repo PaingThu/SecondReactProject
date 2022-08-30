@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { View, StyleSheet } from 'react-native';
 import AppText from './.vscode/app/components/AppText';
 import BorderScreen from './.vscode/app/screens/BorderScreen';
+import CardScreen from './.vscode/app/screens/CardScreen';
 import EncapsulatingStyleScreen from './.vscode/app/screens/EncapsulatingStyleScreen';
 import IconScreen from './.vscode/app/screens/IconScreen';
 import PaddingAndMarginScreen from './.vscode/app/screens/PaddingAndMarginScreen';
@@ -13,7 +14,7 @@ import WelcomeScreen from './.vscode/app/screens/WelcomeScreen';
 
 export default function App() {
   return (
-      <WelcomeScreen/>
+      <CardScreen/>
   );
 }
 
