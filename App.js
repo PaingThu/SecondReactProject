@@ -13,11 +13,7 @@ import WelcomeScreen from './.vscode/app/screens/WelcomeScreen';
 
 export default function App() {
   return (
-      <View
-          style={styles.container}
-      >
-          <AppText>Platform Styling Text</AppText>
-      </View>
+      <WelcomeScreen/>
   );
 }
 
