@@ -3,6 +3,7 @@ import { FlatList } from 'react-native';
 import Constants from 'expo-constants';
 import ListItem from '../components/ListItem';
 import Screen from '../components/Screen';
+import ListItemSeparator from '../components/ListItemSeparator';
 
 const messages = [
     {
@@ -20,13 +21,17 @@ const messages = [
 ]
 
 function MessagesScreen(props) {
-    console.log(Constants.statusBarHeight)
     return (
         <Screen>
             <FlatList
                 data={messages}
                 keyExtractor={message => message.id.toString()}
-                renderItem = {({item})=><ListItem title={item.title} subTitle={item.description} image={item.image}/>}
+                renderItem = {
+                    ({item})=><ListItem 
+                        title={item.title} subTitle={item.description} image={item.image}
+                    />
+                }
+                ItemSeparatorComponent = { ListItemSeparator }
             />
         </Screen>
     );
