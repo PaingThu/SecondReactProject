@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, StyleSheet } from 'react-native';
 import AppText from './.vscode/app/components/AppText';
+import Icon from './.vscode/app/components/Icon';
+import Screen from './.vscode/app/components/Screen';
 import BorderScreen from './.vscode/app/screens/BorderScreen';
 import CardScreen from './.vscode/app/screens/CardScreen';
 import EncapsulatingStyleScreen from './.vscode/app/screens/EncapsulatingStyleScreen';
@@ -16,7 +18,9 @@ import WelcomeScreen from './.vscode/app/screens/WelcomeScreen';
 
 export default function App() {
   return (
-      <MessagesScreen/>
+      <Screen>
+          <Icon name = "email" size = {40} backgroundColor = 'red' />
+      </Screen>
   );
 }
 
