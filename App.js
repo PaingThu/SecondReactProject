@@ -4,6 +4,7 @@ import AppText from './.vscode/app/components/AppText';
 import Icon from './.vscode/app/components/Icon';
 import ListItem from './.vscode/app/components/ListItem';
 import Screen from './.vscode/app/components/Screen';
+import AccountScreen from './.vscode/app/screens/AccountScreen';
 import BorderScreen from './.vscode/app/screens/BorderScreen';
 import CardScreen from './.vscode/app/screens/CardScreen';
 import EncapsulatingStyleScreen from './.vscode/app/screens/EncapsulatingStyleScreen';
@@ -19,12 +20,7 @@ import WelcomeScreen from './.vscode/app/screens/WelcomeScreen';
 
 export default function App() {
   return (
-      <Screen>
-          <ListItem 
-            title="Title"
-            ImageComponent= {<Icon name = 'email'/>} 
-          />
-      </Screen>
+      <AccountScreen />
   );
 }
 
