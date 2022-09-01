@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { View, StyleSheet } from 'react-native';
 import AppText from './.vscode/app/components/AppText';
 import Icon from './.vscode/app/components/Icon';
+import ListItem from './.vscode/app/components/ListItem';
 import Screen from './.vscode/app/components/Screen';
 import BorderScreen from './.vscode/app/screens/BorderScreen';
 import CardScreen from './.vscode/app/screens/CardScreen';
@@ -19,7 +20,10 @@ import WelcomeScreen from './.vscode/app/screens/WelcomeScreen';
 export default function App() {
   return (
       <Screen>
-          <Icon name = "email" size = {40} backgroundColor = 'red' />
+          <ListItem 
+            title="Title"
+            ImageComponent= {<Icon name = 'email'/>} 
+          />
       </Screen>
   );
 }
