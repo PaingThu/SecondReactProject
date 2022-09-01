@@ -10,6 +10,7 @@ import CardScreen from './.vscode/app/screens/CardScreen';
 import EncapsulatingStyleScreen from './.vscode/app/screens/EncapsulatingStyleScreen';
 import IconScreen from './.vscode/app/screens/IconScreen';
 import ListingDetailsScreen from './.vscode/app/screens/ListingDetailsScreen';
+import ListingsScreen from './.vscode/app/screens/ListingsScreen';
 import MessagesScreen from './.vscode/app/screens/MessagesScreen';
 import PaddingAndMarginScreen from './.vscode/app/screens/PaddingAndMarginScreen';
 import ShadowScreen from './.vscode/app/screens/ShadowScreen';
@@ -20,7 +21,7 @@ import WelcomeScreen from './.vscode/app/screens/WelcomeScreen';
 
 export default function App() {
   return (
-      <AccountScreen />
+      <ListingsScreen />
   );
 }
 
