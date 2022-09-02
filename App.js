@@ -1,5 +1,7 @@
+import React, { useState } from 'react';
+
 import { StatusBar } from 'expo-status-bar';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, TextInput, Text } from 'react-native';
 import AppText from './.vscode/app/components/AppText';
 import Icon from './.vscode/app/components/Icon';
 import ListItem from './.vscode/app/components/ListItem';
@@ -20,9 +22,23 @@ import WelcomeScreen from './.vscode/app/screens/WelcomeScreen';
 
 
 export default function App() {
-  return (
-      <ListingsScreen />
-  );
+    const [firstName, setFirstName] = useState('')
+    return (
+        <Screen>
+            <Text>{firstName}</Text>
+            <TextInput
+                secureTextEntry={true}  
+                clearButtonMode='always'
+                keyboardType = 'numeric'
+                onChangeText={ text => setFirstName(text) }
+                placeholder='First Name'
+                style={{
+                    borderBottomColor: '#ccc',
+                    borderBottomWidth: 1
+                }}
+            />
+        </Screen>
+    );
 }
 
 const styles = StyleSheet.create({
