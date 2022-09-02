@@ -19,23 +19,16 @@ import ShadowScreen from './.vscode/app/screens/ShadowScreen';
 import StylingTextScreen from './.vscode/app/screens/StylingTextScreen';
 import ViewImageSreen from './.vscode/app/screens/ViewImageSreen';
 import WelcomeScreen from './.vscode/app/screens/WelcomeScreen';
+import AppTextInput from './.vscode/app/components/AppTextInput';
 
 
 export default function App() {
     const [firstName, setFirstName] = useState('')
     return (
         <Screen>
-            <Text>{firstName}</Text>
-            <TextInput
-                secureTextEntry={true}  
-                clearButtonMode='always'
-                keyboardType = 'numeric'
-                onChangeText={ text => setFirstName(text) }
-                placeholder='First Name'
-                style={{
-                    borderBottomColor: '#ccc',
-                    borderBottomWidth: 1
-                }}
+            <AppTextInput 
+                icon='email' 
+                placeholder='Email'
             />
         </Screen>
     );
